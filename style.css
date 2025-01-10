@@ -626,26 +626,26 @@ transition: 0.3s ease-in-out;
 
 @media (max-width: 768px) {
     .timeline-items::before {
-        left: 20px; /* Adjust the centerline for smaller screens */
+        left: 20px; 
     }
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
-        text-align: left; /* Align content to the left */
-        padding: 0 0 0 50px; /* Add space on the left for the centerline */
+        text-align: left; 
+        padding: 0 0 0 50px; 
     }
     .timeline-dot {
-        left: 10px; /* Adjust position of the dots */
+        left: 10px; 
     }
     .timeline-content {
-        width: calc(100% - 70px); /* Make the content wider */
-        margin-left: 40px; /* Adjust position to align with the timeline */
-        padding: 20px 30px; /* Reduce padding for smaller screens */
+        width: calc(100% - 70px); 
+        margin-left: 40px; 
+        padding: 20px 30px; /
     }
     .timeline-content h3 {
-        font-size: 18px; /* Reduce font size for smaller screens */
+        font-size: 18px; 
     }
     .timeline-content p {
-        font-size: 14px; /* Reduce font size for better readability */
+        font-size: 14px; 
     }
 }
 @media (max-width: 480px) {
