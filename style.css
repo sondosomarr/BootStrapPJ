@@ -268,17 +268,11 @@ transition: 0.3s ease-in-out;
     margin-bottom: 3rem;
 }
 .timeline-items{
-    /* max-width: 1200px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    position: relative; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
-    gap: 2rem;
-    margin: 2rem auto;
 }
 .timeline-items::before{
     content: "";
@@ -286,25 +280,14 @@ transition: 0.3s ease-in-out;
     width: 5px;
     height: 100%;
     background: var(--main-color);
-    left: calc(50% - 1px);
+    left: calc(50% - 2.5px);
+    /* z-index: -1; */
 }
 
 .timeline-item{
-    /* margin-bottom: 40px;
+    margin-bottom: 40px;
     position: relative;
-    width: 100%; */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1rem;
-    width: 70%;
-    position: relative;
-    background: rgba(0, 0, 0, 0.8);
-    border: 2px solid var(--main-color);
-    padding: 1.5rem;
-    border-radius: 1rem;
-    color: var(--text-color);
-    transition: all 0.3s ease-in-out;
+    width: 100%;
 }
 .timeline-item:last-child{
     margin-bottom: 0;
@@ -325,7 +308,7 @@ transition: 0.3s ease-in-out;
                 0 0 50px var(--main-color);
     border-radius: 50%;
     position: absolute;
-    left: calc(50% - 8px);
+    left: calc(50% - 10.5px);
     top:10px;
                 
 }
@@ -611,47 +594,4 @@ transition: 0.3s ease-in-out;
         grid-template-columns: repeat(1,1fr);
     }
 }
-@media (max-width: 768px) {
-    .timeline-items {
-        gap: 1.5rem;
-    }
 
-    .timeline-item {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        width: 90%;
-    }
-
-    .timeline-date {
-        font-size: 1rem;
-        width: auto;
-    }
-
-    .timeline-content h3 {
-        font-size: 1.2rem;
-    }
-
-    .timeline-content p {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .timeline-item {
-        padding: 1rem;
-    }
-
-    .timeline-content h3 {
-        font-size: 1rem;
-    }
-
-    .timeline-content p {
-        font-size: 0.8rem;
-    }
-
-    .timeline-dot {
-        width: 15px;
-        height: 15px;
-    }
-}
